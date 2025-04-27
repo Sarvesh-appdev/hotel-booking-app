@@ -7,9 +7,27 @@
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
           <link rel="stylesheet" href="styles.css">
           <body>
-        <?php include("../templates/header.php");  ?>
+        <?php include "templates/header.php";  ?>
+    <div class="container mt-5">
+        <h2>Available Rooms</h2>
+        <table class="table table-striped">
+            <tr><th>Room ID</th><th>Room Type</th><th>Price</th><th>Availability</th><th>Action</th></tr>
+            <?php
+                $rooms = array_map('str_getcsv', file('data/rooms.csv'));
+                foreach ($rooms as $room) {
+                    $availability = ($room[3] == 'true') ? 'Available' : 'Booked';
+                    echo "<tr>
+                            <td>{$room[0]}</td>
+                            <td>{$room[1]}</td>
+                            <td>\${$room[2]}</td>
+                            <td>{$availability}</td>
+                            <td><a href='book-room.php?room_id={$room[0]}' class='btn btn-primary'>Book Now</a></td>
+                          </tr>";
+                }
+            ?>
+            </table>
 <!-- This website is styled using Bootstrap, a front-end framework designed for building responsive and modern web pages. -->
-        <div class="search-form container mt-5">
+        <div class="search-form mt-5">
                 <h1 class="title">Welcome to the Hotel Booking System</h1>
                 <p>Find the best rooms at the best prices.</p>
                 <form method="GET">
@@ -18,7 +36,6 @@
                 <button type="submit">Search</button>
             </form>
             </div>
-          
           <div class="container mt-4">
             <?php
             if (isset($_GET['roomType'])){
@@ -48,7 +65,7 @@
                 }
             }
             ?>
-
+            
             <?php 
               if(isset($_GET['viewId'])){
                   $roomId = intval($_GET['viewId']);
