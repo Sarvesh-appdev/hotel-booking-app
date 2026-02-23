@@ -10,23 +10,21 @@ A full-stack hotel reservation system that allows users to search hotels, view a
 
 ## 🚀 Features
 
-- User registration & login
-- Search hotels by location
-- Filter by price and availability
-- Real-time room availability
-- Booking confirmation system
-- Admin dashboard for hotel management
+- Search available hotel rooms
+- View room details
+- Real-time availability checking
+- Booking form with server-side validation
+- Data storage using CSV and JSON files
+- Responsive user interface built with Bootstrap
 
 ---
 
 ## 🛠 Tech Stack
 
-- Frontend: React.js
-- Backend: Node.js, Express.js
-- Database: PostgreSQL / MongoDB
-- Authentication: JWT
-- Payments: Stripe API
-- Deployment: Vercel / AWS
+- PHP
+- Bootstrap
+- CSV
+- JSON
 
 ## 🧠 What I Learned
 
