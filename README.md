@@ -1,49 +1,72 @@
-<<<<<<< HEAD
+---
 
-# Hotel Booking Application -
+# 🏨 2️⃣ Hotel Booking Application – README
 
-## Description -
+# 🏨 Hotel Booking Application
 
-    This is a simple hotel booking web application where users can search for rooms, view room details, and book rooms. The application allows users to filter rooms by type, view detailed information about rooms, and submit booking details. It uses data stored in CSV or JSON files for room information and bookings.
+A full-stack hotel reservation system that allows users to search hotels, view availability, book rooms, and manage reservations. The system supports authentication, booking management, and secure payment processing.
 
-## Features
+---
 
-    -**Search for Available Rooms: Users can filter rooms by type (Single, Double, Suite).
-    -**View Room Details: Clicking a room displays detailed information about it (name, type, price).
-    -**Book a Room: Users can book a room by submitting their name, room type, and check-in/check-out dates.
-    -**Custom Validation: Ensures that input data is valid, like ensuring check-in is before check-out.
+## 🚀 Features
 
-## Setup and Run
+- User registration & login
+- Search hotels by location
+- Filter by price and availability
+- Real-time room availability
+- Booking confirmation system
+- Admin dashboard for hotel management
 
-### Steps to Run the Application:
+---
 
-    1. Clone the repository.
-    2. Run MAMP and start APACHE Server
-    3. Open `index.php` in your browser.
-    4. Run it through localhost:8888.
+## 🛠 Tech Stack
 
-## Technologies used
+- Frontend: React.js
+- Backend: Node.js, Express.js
+- Database: PostgreSQL / MongoDB
+- Authentication: JWT
+- Payments: Stripe API
+- Deployment: Vercel / AWS
 
-## Citations & Acknowledgements
+---
 
-    1.This project uses the following libraries and resources:
+## 📸 Screenshots
 
-1. **Bootstrap 5.3.3**:
+### Hotel Listings
+<p align="center">
+  <img src="assets/listings.png" width="600"/>
+</p>
 
+### Booking Page
+<p align="center">
+  <img src="assets/booking.png" width="600"/>
+</p>
 
-    - Bootstrap is used for responsive design, styling, and interactive components.
-    - [Bootstrap Documentation](https://getbootstrap.com/)
-    - CDN URL: `https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css`
-    2. PHP Documentation:
-       URL - https://www.php.net/docs.php
-    3.Chatgpt:
-      URL -https://openai.com/index/chatgpt/
-    4.w3school:
-     URL - shttps://www.w3schools.com/php/
-    5.Lecture materials from 2170 - https://git.cs.dal.ca/courses/2025-winter/csci-2170/lecture-examples
+---
 
-=======
+## 🧠 What I Learned
 
-# hotel-booking-app
+- Relational database design
+- Booking logic implementation
+- Handling date availability conflicts
+- Secure payment processing
+- API integration
 
-> > > > > > > 2864dc8edf8136b94c80dfd0240bd1d68d7f7712
+---
+
+## 📌 Future Improvements
+
+- Reviews & ratings
+- Email confirmations
+- Multi-language support
+- Role-based admin controls
+
+---
+
+## 📂 Installation
+
+```bash
+git clone https://github.com/your-username/hotel-booking-app.git
+cd hotel-booking-app
+npm install
+npm start
