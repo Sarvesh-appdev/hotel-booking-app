@@ -28,22 +28,6 @@ A full-stack hotel reservation system that allows users to search hotels, view a
 - Payments: Stripe API
 - Deployment: Vercel / AWS
 
----
-
-## 📸 Screenshots
-
-### Hotel Listings
-<p align="center">
-  <img src="assets/listings.png" width="600"/>
-</p>
-
-### Booking Page
-<p align="center">
-  <img src="assets/booking.png" width="600"/>
-</p>
-
----
-
 ## 🧠 What I Learned
 
 - Relational database design
